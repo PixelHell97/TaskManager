@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">TaskManager</string>
+    <string name="home">Home</string>
+    <string name="calender">Calender</string>
+    <string name="notification">Notification</string>
+    <string name="search">Search</string>
+    <string name="profile">Profile</string>
+    <string name="user_own_profile_account">User own profile account</string>
+    <string name="my_tasks">My Tasks</string>
+    <string name="in_progress">In-progress</string>
+    <string name="completed">Completed</string>
+    <string name="progress">Progress</string>
+</resources>
