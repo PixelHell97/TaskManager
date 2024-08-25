@@ -10,20 +10,59 @@ import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import com.pixelh97.taskmanager.R
 import com.pixelh97.taskmanager.data.model.Project
+import com.pixelh97.taskmanager.data.model.Task
+import com.pixelh97.taskmanager.data.model.TaskState
 import com.pixelh97.taskmanager.databinding.FragmentHomeBinding
+import com.pixelh97.taskmanager.presentation.common.adapter.TaskAdapter
 import com.pixelh97.taskmanager.presentation.main.fragments.home.adapter.ProjectCardsAdapter
+import java.util.Calendar
 import kotlin.math.abs
 
 class HomeFragment : Fragment() {
     private var _binding: FragmentHomeBinding? = null
     private val binding get() = _binding!!
     private lateinit var projectAdapter: ProjectCardsAdapter
+    private lateinit var tasksAdapter: TaskAdapter
     private val fakeProjectsList: List<Project> =
         listOf(
             Project(1, "Back-End Development", "", "Oct 22, 2020"),
             Project(2, "Front-End Development", "", "Dec 22, 2020"),
             Project(3, "Android Development", "", "Jun 22, 2020"),
             Project(4, "Flutter Development", "", "July 22, 2020"),
+        )
+
+    private val fakeDataList =
+        listOf(
+            Task(
+                0,
+                "Design App",
+                "Design todo app",
+                Calendar.getInstance().time,
+                null,
+                null,
+                null,
+                TaskState.IN_PROGRESS,
+            ),
+            Task(
+                1,
+                "Cook App",
+                "Design todo app",
+                Calendar.getInstance().time,
+                null,
+                null,
+                null,
+                TaskState.IN_PROGRESS,
+            ),
+            Task(
+                2,
+                "ABDo App",
+                "Design todo app",
+                Calendar.getInstance().time,
+                null,
+                null,
+                null,
+                TaskState.IN_PROGRESS,
+            ),
         )
 
     override fun onCreateView(
@@ -63,6 +102,13 @@ class HomeFragment : Fragment() {
         binding.projectsVp.setPageTransformer(compositePageTransformer)
         binding.projectsVp.adapter = projectAdapter
         binding.dotsIndicator.attachTo(binding.projectsVp)
+
+        initTaskAdapter()
+    }
+
+    private fun initTaskAdapter() {
+        tasksAdapter = TaskAdapter(fakeDataList)
+        binding.rvTasks.adapter = tasksAdapter
     }
 
     override fun onDestroyView() {

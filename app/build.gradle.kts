@@ -63,4 +63,9 @@ dependencies {
     // sdp-ssp
     implementation(libs.sdp.android)
     implementation(libs.ssp.android)
+
+    // calendar
+    implementation("com.github.prolificinteractive:material-calendarview:2.0.0")
+
+    implementation("com.github.tejpratap46:RecyclerCalendarAndroid:2.0.1")
 }

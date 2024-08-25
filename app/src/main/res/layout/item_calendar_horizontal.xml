@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_18sdp"
+        app:contentPaddingBottom="@dimen/_6sdp"
+        app:contentPaddingTop="@dimen/_6sdp"
+        app:strokeWidth="0dp">
+
+        <LinearLayout
+            android:layout_width="@dimen/_38sdp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textCalenderItemHorizontalDay"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins_medium"
+                android:gravity="center"
+                android:textColor="#2E3A59"
+                android:textSize="@dimen/_12ssp"
+                tools:text="Mon" />
+
+            <TextView
+                android:id="@+id/textCalenderItemHorizontalDate"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:fontFamily="@font/poppins_light"
+                android:gravity="center"
+                android:textColor="#2E3A59"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                tools:text="23" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</layout>

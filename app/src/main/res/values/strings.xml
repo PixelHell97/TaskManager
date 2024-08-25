@@ -11,4 +11,5 @@
     <string name="completed">Completed</string>
     <string name="progress">Progress</string>
     <string name="add_task">Add Task</string>
+    <string name="tasks">Tasks</string>
 </resources>

@@ -17,7 +17,7 @@
         <item name="cornerSizeTopLeft">0dp</item>
         <item name="cornerFamilyBottomLeft">rounded</item>
         <item name="cornerFamilyBottomRight">rounded</item>
-        <item name="cornerSizeBottomLeft">30%</item>
-        <item name="cornerSizeBottomRight">30%</item>
+        <item name="cornerSizeBottomLeft">8%</item>
+        <item name="cornerSizeBottomRight">8%</item>
     </style>
 </resources>
