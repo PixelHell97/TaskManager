@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <selector xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:color="@color/gradient_special" android:state_selected="true" />
+    <item android:color="#9C2CF3" android:state_selected="true" />
     <item android:color="#D8DEF3" android:state_selected="false" />
     <item android:color="#D8DEF3" />
 </selector>

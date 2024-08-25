@@ -3,6 +3,7 @@
     android:endColor="#FF3A49F9"
     android:endX="30.675"
     android:endY="56.694"
+    android:gradientRadius="-45"
     android:startColor="#FF9C2CF3"
     android:startX="28.161"
     android:startY="0.776"
