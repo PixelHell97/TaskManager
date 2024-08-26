@@ -12,4 +12,16 @@
     <string name="progress">Progress</string>
     <string name="add_task">Add Task</string>
     <string name="tasks">Tasks</string>
+    <string name="name">Name</string>
+    <string name="enter_the_task_name">Enter the task name</string>
+    <string name="date">Date</string>
+    <string name="date_picker">Date Picker</string>
+    <string name="start_time">Start Time</string>
+    <string name="end_time">End Time</string>
+    <string name="description">Description</string>
+    <string name="category">Category</string>
+    <string name="create_a_task">Create a Task</string>
+    <string name="create_task">Create Task</string>
+    <string name="edit_a_task">Edit a Task</string>
+    <string name="upgrade_task">Upgrade Task</string>
 </resources>

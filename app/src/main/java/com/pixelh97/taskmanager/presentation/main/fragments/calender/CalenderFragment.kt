@@ -1,5 +1,6 @@
 package com.pixelh97.taskmanager.presentation.main.fragments.calender
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.view.LayoutInflater
@@ -10,8 +11,11 @@ import androidx.recyclerview.widget.PagerSnapHelper
 import com.pixelh97.taskmanager.data.model.Task
 import com.pixelh97.taskmanager.data.model.TaskState
 import com.pixelh97.taskmanager.databinding.FragmentCalenderBinding
+import com.pixelh97.taskmanager.presentation.common.Constants.NAV_TASK_TYPE
 import com.pixelh97.taskmanager.presentation.common.adapter.TaskAdapter
 import com.pixelh97.taskmanager.presentation.main.fragments.calender.adapter.HorizontalRecyclerCalendarAdapter
+import com.pixelh97.taskmanager.presentation.task.TaskScreenType
+import com.pixelh97.taskmanager.presentation.task.activity.TaskActivity
 import com.tejpratapsingh.recyclercalendar.model.RecyclerCalendarConfiguration
 import com.tejpratapsingh.recyclercalendar.utilities.CalendarUtils
 import java.util.Calendar
@@ -77,6 +81,11 @@ class CalenderFragment : Fragment() {
 
         initCalender()
         initTaskAdapter()
+        binding.btnAddTask.setOnClickListener {
+            val intent = Intent(requireActivity(), TaskActivity::class.java)
+            intent.putExtra(NAV_TASK_TYPE, TaskScreenType.ADD)
+            startActivity(intent)
+        }
     }
 
     private fun initTaskAdapter() {
@@ -107,6 +116,8 @@ class CalenderFragment : Fragment() {
             date = date,
             format = DATE_FORMAT,
         ) ?: ""
+
+        CalendarUtils
 
         Log.e("date -> ", "${date.time}")
         val calendarAdapterHorizontal =

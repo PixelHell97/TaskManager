@@ -15,4 +15,5 @@
     <color name="blue">#5D9CEC</color>
     <color name="colorBlack">#2E3A59</color>
     <color name="colorAccent">#c4c8fd</color>
+    <color name="category_item_color">#E5EAFC</color>
 </resources>

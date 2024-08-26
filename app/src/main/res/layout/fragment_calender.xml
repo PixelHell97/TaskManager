@@ -17,7 +17,7 @@
             app:contentPaddingRight="@dimen/_24sdp"
             app:contentPaddingTop="@dimen/_18sdp"
             app:layout_constraintTop_toTopOf="parent"
-            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.CardView"
+            app:shapeAppearanceOverlay="@style/BottomCornerCard"
             app:strokeWidth="0dp">
 
             <androidx.constraintlayout.widget.ConstraintLayout

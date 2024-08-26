@@ -7,17 +7,27 @@
 
     <style name="Theme.TaskManager" parent="Base.Theme.TaskManager" />
 
+
     <style name="ShapedCorner">
         <item name="cornerSize">20%</item>
     </style>
 
 
-    <style name="ShapeAppearanceOverlay.CardView" parent="">
+    <style name="BottomCornerCard" parent="">
         <item name="cornerSizeTopRight">0dp</item>
         <item name="cornerSizeTopLeft">0dp</item>
         <item name="cornerFamilyBottomLeft">rounded</item>
         <item name="cornerFamilyBottomRight">rounded</item>
         <item name="cornerSizeBottomLeft">8%</item>
         <item name="cornerSizeBottomRight">8%</item>
+    </style>
+
+    <style name="TopCornerCard" parent="">
+        <item name="cornerSizeTopRight">8%</item>
+        <item name="cornerSizeTopLeft">8%</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeBottomLeft">0dp</item>
+        <item name="cornerSizeBottomRight">0dp</item>
     </style>
 </resources>

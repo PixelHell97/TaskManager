@@ -1,9 +1,12 @@
 package com.pixelh97.taskmanager.data.model
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
 import java.sql.Timestamp
 import java.util.Calendar
 import java.util.Date
 
+@Parcelize
 data class Task(
     val id: Int,
     val title: String,
@@ -13,7 +16,7 @@ data class Task(
     val timeFrom: Timestamp?,
     val timeTo: Timestamp? = null,
     val state: TaskState,
-) {
+) : Parcelable {
     fun formatDurationFromNow(): String {
         val currentDate = Calendar.getInstance().time
         val difference = currentDate.time - this.createdAt.time

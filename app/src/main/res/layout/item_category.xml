@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/_4sdp"
+    app:cardBackgroundColor="@color/category_item_color"
+    app:cardCornerRadius="@dimen/_18sdp"
+    app:strokeWidth="0dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/_16sdp"
+        android:layout_marginVertical="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:fontFamily="@font/poppins"
+        android:maxEms="4"
+        android:maxLines="1"
+        android:textColor="@color/header_text_color"
+        android:textSize="@dimen/_8ssp"
+        tools:text="Meetinsssssssssssssg" />
+</com.google.android.material.card.MaterialCardView>
